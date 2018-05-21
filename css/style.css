@@ -42,7 +42,9 @@ nav#main-menu ul {
     margin: 0;
     padding: 0;
 }
-
+nav#main-menu label, #rwdmenu{
+    display: none;
+}
 nav#main-menu ul li {
     display: inline-block;
     line-height: 50px;
@@ -61,6 +63,7 @@ header#main-header {
     background-image: url(../img/header-background.jpg);
     background-size: cover;
     height: 100vh;
+    
 }
 
 header#main-header #osoba {
@@ -255,6 +258,7 @@ section#contact .contact-inner form input[type="submit"] {
     float: right;
     background-color: #1ac056;
     color: white;
+    margin-right:10px;
 }
 
 footer{
