@@ -6,20 +6,24 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #f9fcfe;
+    background-color: black;
 }
-section{
+
+section {
     padding: 40px 60px;
+    background-color: #f9fcfe; 
 }
-section h2{
+
+section h2 {
     line-height: 50px;
     font-size: 40px;
     font-weight: 100;
 
 }
+
 span {
-    color:#1ac056;
-    font-weight: 700;
+    color: #1ac056;
+    font-weight: 800;
 
 }
 
@@ -43,13 +47,15 @@ nav#main-menu ul li {
     display: inline-block;
     line-height: 50px;
     font-size: 20px;
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
     color: #1ac056;
 }
+
 nav#main-menu ul li a {
     color: #1ac056;
     text-decoration: none;
 }
+
 header#main-header {
     position: relative;
     background-image: url(../img/header-background.jpg);
@@ -77,27 +83,17 @@ header#main-header #osoba h1 {
 
 }
 
-header#main-header #osoba h1 span {
-    color: #1ac056;
-    font-weight: 800;
-}
-
 header#main-header #osoba h2 {
     font-weight: 100;
 }
 
 section#about {
     text-align: center;
-    
-
 }
+
 section#about h2 {
     line-height: 50px;
 
-}
-section#about h2 span {
-    color: #1ac056;
-    font-weight: 800;
 }
 
 section#about #foto {
@@ -108,15 +104,14 @@ section#about #foto {
 }
 
 section#about figure {
-    width: 100%;
-   
-
+    margin: 0;
+    padding: 0;
 }
 
 section#about figure img {
     width: 50%;
-    border:10px solid white;
-    border-radius:10px;
+    border: 10px solid white;
+    border-radius: 10px;
 }
 
 section#about #paragraf {
@@ -125,70 +120,74 @@ section#about #paragraf {
     float: left;
 
 }
+
 .clear {
     clear: both;
 }
+
 section#skills {
     text-align: center;
-    -webkit-box-shadow: 0px -9px 5px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -9px 5px -3px rgba(0,0,0,0.75);
-box-shadow: 0px -9px 5px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -9px 5px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -9px 5px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -9px 5px -3px rgba(0, 0, 0, 0.75);
 }
-section#skills h2 {
-}
-section#skills h2 span {
-    color: #1ac056;
-    font-weight: 800;
-}
+
 section#skills .icons {
-    display:inline-block;
+    display: inline-block;
 }
+
 section#portfolio {
     text-align: center;
 }
+
 section#portfolio h2 {
     line-height: 50px;
 }
-section#portfolio h2 span{
+
+section#portfolio h2 span {
     color: #1ac056;
     font-weight: 800;
 }
+
 section#portfolio .picks {
-    display:inline-block;
+    display: inline-block;
     height: 300px;
-    width:33%;
+    width: 33.333%;
     float: left;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
+
 section#portfolio #pic1 {
     background-image: url(../img/portfolio1.jpg);
-    
-    
 }
+
 section#portfolio #pic2 {
     background-image: url(../img/portfolio2.jpg);
 }
+
 section#portfolio #pic3 {
     background-image: url(../img/portfolio4.jpg);
 }
+
 section#portfolio .picks .mask {
-    background-color: rgba(42,61,79,0.8);
-    width:100%;
+    background-color: rgba(42, 61, 79, 0.8);
     height: 100%;
-    opacity:0;
+    opacity: 0;
     padding: 10px;
 }
 
 section#portfolio .picks .mask:hover {
-    opacity:1;
+    opacity: 1;
 }
+
 section#portfolio .picks .mask .border {
     border: 2px solid white;
     height: 100%;
-    position:relative;
+    position: relative;
 }
+
 section#portfolio .picks .mask .border .content {
     position: absolute;
     top: 50%;
@@ -196,56 +195,71 @@ section#portfolio .picks .mask .border .content {
     color: #FFF;
     text-align: center;
     width: 100%;
-    
 }
-section#contact{
+
+section#contact {
     background-color: #213b50;
-    width:100%;
-    color:white;
+    color: white;
+    background-color: #213b50;
 }
-section#contact .contact-inner{
+
+section#contact .contact-inner {
     width: 50%;
-    display:inline-block;
+    display: inline-block;
     float: left;
-    background-color: #213b50;
 }
-section#contact a {
+
+section#contact a i[class~='fab'] {
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
     border: 1px solid white;
     text-decoration: none;
     font-size: 20px;
-    color:white;
-    padding: 10px;
+    color: white;
     margin: 10px 10px;
-}    
-section#contact .contact-inner address a {
-    color:#1ac056;
-    margin-left:5px;
-    font-size: 20px;
-    border:none;
-} 
+}
 
-section#contact .contact-inner form input{
+section#contact .contact-inner address a {
+    color: #1ac056;
+    margin-left: 5px;
+    font-size: 20px;
+
+}
+
+section#contact .contact-inner form input {
     width: 100%;
     height: 40px;
     margin-top: 10px;
     background-color: #195090;
-    border:none;
+    border: none;
     padding: 10px;
-    color:white;
+    color: white;
 }
-section#contact .contact-inner form textarea{
+
+/*zgrupowac po przecinku ze stylem wyzej*/
+section#contact .contact-inner form textarea {
     margin-top: 10px;
-    width:100%;
+    width: 100%;
     background-color: #195090;
-    border:none;
+    border: none;
     padding: 10px;
-    color:white;
+    color: white;
 
 }
-section#contact .contact-inner form input[type="submit"] {
-    width:80px;
-    float:right;
-    background-color: #1ac056;
-    color:white;
 
+section#contact .contact-inner form input[type="submit"] {
+    width: 80px;
+    float: right;
+    background-color: #1ac056;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    margin-left: 80px;
+    
 }
