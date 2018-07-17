@@ -1,55 +1,43 @@
-@media (max-width: 992px) {
+@media (max-width:1170px) {
     nav#main-menu ul {
         display: none;
     }
     nav#main-menu label {
         display: block;
         text-align: right;
-        color:#1ac056;
+        color: #1ac056;
         margin-right: 10px;
+        line-height: 30px;
     }
-    
+
     #rwdmenu:checked + ul {
         display: block;
     }
-    section#about #foto {
-        width: 100%;
-        display: inline-block;
-        float: left;
-    }
-    section#about #foto figure {
-        padding: 0;
-        margin: 0;
-    }
-    section#about figure img {
-        width: 100%;
-        border: 10px solid white;
-        border-radius: 10px;
-    }
-    section#about #paragraf {
-        width: 100%;
-        display: inline-block;
+    @media (max-width: 992px) {
+        section#about .about-inner {
+            width: 50%;
+        }
+        section#about .about-inner img {
+            width: 90%;
+        }
 
-    }
-    section#portfolio .picks {
-        display: inline-block;
-        height: 300px;
-        width: 100%;
-        float: left;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+        section#portfolio .picks {
+            width: 100%;
+        }
 
-    section#contact .contact-inner {
-        width: 100%;
-        display: inline-block;
-        float: left;
-        background-color: #213b50;
-        text-align: center;
-        margin-bottom: 40px;
-
+        section#contact .contact-inner {
+            width: 100%;
+            text-align: center;
+        }
+        section#contact .contact-inner address a {
+            line-height: 100px;
+        }
     }
-    section#contact .contact-inner address a {
-        line-height: 100px;
+    @media (max-width: 640px) {
+        section#about .about-inner {
+            width: 100%;
+        }
+        section#about .about-inner img {
+            width: 100%;
+        }
     }
-}
